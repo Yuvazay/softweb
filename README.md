@@ -1,5 +1,5 @@
 # Ex.07 Software Product Company Website
-## Date:
+## Date:12-05-2024
 
 ## AIM:
 To develop a static company website to display the softwares and services provided by the company.
@@ -904,11 +904,15 @@ PRODUCT
 
 ```
 ## OUTPUT:
+![alt text](<Screenshot 2024-05-14 103715.png>)
 
-![alt text](<Screenshot 2024-05-12 174216.png>)
-![alt text](<Screenshot 2024-05-12 174228.png>)
-![alt text](<Screenshot 2024-05-12 174245.png>)
-![alt text](<Screenshot 2024-05-12 174255.png>)
+![alt text](<Screenshot 2024-05-14 103725.png>)
+
+![alt text](<Screenshot 2024-05-14 103737.png>)
+
+
+![alt text](<Screenshot 2024-05-14 103745.png>)
+
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
