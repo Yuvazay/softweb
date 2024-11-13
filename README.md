@@ -1,8 +1,8 @@
-# Ex.07 Software Product Company Website
-## Date:12-05-2024
+# Ex.07 Restaurant Website
+## Date: 14-10-2024
 
 ## AIM:
-To develop a static company website to display the softwares and services provided by the company.
+To develop a static Restaurant website to display the food items and services provided by them.
 
 ## DESIGN STEPS:
 
@@ -28,890 +28,300 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 ## PROGRAM:
-home.html
+HTML
 ```
-home
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INFOTECH SOFTWARE DEVELOPEMENT COMPANY</title>
-    <style type="text/css">
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .banner {
-        width: 100%;
-        height: 95vh;
-        background-image: linear-gradient(
-            rgba(9, 2, 2, 0.75),
-            rgba(0, 0, 0, 0.75)
-          ),
-          url( software\ 1.jpg );
-        background-size: cover;
-        background-position: center;
-      }
-      .navbar {
-        width: 85%;
-        margin: auto;
-        padding: 35px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .logo {
-        color: white;
-        font-size: 40px;
-        font-weight: 700;
-        letter-spacing: 3px;
-      }
-      span {
-        color: #61de2a;
-      }
-      form {
-        width: 300px;
-        height: 40px;
-        display: flex;
-        background: rgba(255, 255, 255, 0.2);
-        padding: 1px 1px;
-        font-size: 15px;
-        border-radius: 10px;
-        backdrop-filter: blur(4px) saturate(180%);
-      }
-      form input {
-        background: transparent;
-        flex: 1;
-        border: 0;
-        outline: none;
-        padding: 12px 20px;
-        font-size: 15px;
-        color: #61de2a;
-      }
-      ::placeholder {
-        color: white;
-      }
-      form button {
-        border: 0;
-        outline: none;
-        padding: 5px 20px;
-        color: white;
-        border-radius: 10px;
-        background: #61de2a;
-        cursor: pointer;
-      }
-      #search.hover {
-        border: 1px;
-        padding: 10px;
-
-        transition: 0.5s;
-        cursor: pointer;
-        border-radius: 30px;
-        background: #61de2a;
-        color: #081b29;
-        box-shadow: 0 0 20px #61de2a;
-      }
-      .navbar li {
-        list-style: none;
-        display: inline-block;
-        margin: 0 20px;
-        position: relative;
-      }
-      .navbar li a {
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-      }
-      .navbar li:hover {
-        border: 1px;
-        padding: 10px;
-
-        transition: 0.5s;
-        cursor: pointer;
-        border-radius: 30px;
-        background: #61de2a;
-        color: #081b29;
-        box-shadow: 0 0 20px #61de2a;
-      }
-      .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
-      .text h2 {
-        color: white;
-        font-weight: 800;
-        font-size: 50px;
-        letter-spacing: 3px;
-      }
-      .text p {
-        color: white;
-        text-transform: capitalize;
-        font-size: 15px;
-        margin-bottom: 30px;
-        word-spacing: 2px;
-        letter-spacing: 1px;
-      }
-      .login {
-        margin: 0px 10px;
-        border: 2px solid #61de2a;
-        padding: 13px 35px;
-        letter-spacing: 1px;
-        color: white;
-        border-radius: 30px;
-        background-color: #61de2a;
-        text-decoration: none;
-      }
-      .login:hover {
-        border: 2px solid #61de2a;
-        color: #61de2a;
-        background-color: white;
-        transition: 0.5s;
-        cursor: pointer;
-      }
-      .signup {
-        margin: 0px 10px;
-        border: 2px solid black;
-        padding: 13px 35px;
-        letter-spacing: 1px;
-        color: white;
-        border-radius: 30px;
-        background-color: black;
-        text-decoration: none;
-      }
-      .signup:hover {
-        border: 2px solid black;
-        color: black;
-        background-color: white;
-        transition: 0.5s;
-        cursor: pointer;
-      }
-      footer {
-        border: 1px;
-        padding: 10px;
-
-        transition: 0.5s;
-        cursor: pointer;
-        border-radius: 30px;
-        background: #61de2a;
-        color: #081b29;
-        box-shadow: 0 0 20px #61de2a;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="banner">
-      <br />
-      <div class="navbar">
-        <h1 class="logo">IN<span>F</span>O<span> TECH</span></h1>
-        <ul>
-          <li><a href="home.html"> Home </a></li>
-          <li><a href="products.html"> Products </a></li>
-          <li><a href="people.html"> people </a></li>
-          <li><a href="contact_us.html"> Contact </a></li>
-        </ul>
-        <form action="" method="get">
-          <input type="text" placeholder="Enter to Search" />
-          <button id="search" type="submit">Search</button>
-        </form>
-      </div>
-      <div class="content">
-        <div class="text">
-          <h2>
-            "Unlocking efficiency one click at a time. Say goodbye to manual tasks and hello to seamless operations. " 
-          </h2>
-          <br />
-
-          <br />
-          <div>
-            <a href="#" class="login"> Log In </a>
-            <a href="#" class="signup"> Sign Up </a>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burger Restaurant</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Burger Haven</h1>
         </div>
-      </div>
-    </div>
-    <footer>
-      <center>DESIGNED AND DEVELOPED BY YUVASHREE S(212223040251)</center>
-    </footer>
-  </body>
-</html>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-```
-products.html
-```
-PRODUCT
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Page</title>
-    <style type="text/css">
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .banner {
-        width: 100%;
-        height: 95vh;
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.75),
-            rgba(0, 0, 0, 0.75)
-          ),
-          url(software\ 1.jpg);
-        background-size: cover;
-        background-position: center;
-      }
-      .navbar {
-        width: 85%;
-        margin: auto;
-        padding: 35px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .bg-product {
-        border: 1px;
-        padding: 10px;
-        color: white;
-        background-color: #61de2a;
-        border-radius: 30px;
-      }
-      .logo {
-        color: #61de2a;
-        font-size: 40px;
-        font-weight: 700;
-        letter-spacing: 3px;
-      }
-      span {
-        color: white;
-      }
-      form {
-        width: 300px;
-        height: 40px;
-        display: flex;
-        background: rgba(255, 255, 255, 0.2);
-        padding: 1px 1px;
-        font-size: 15px;
-        border-radius: 10px;
-        backdrop-filter: blur(4px) saturate(180%);
-      }
-      form input {
-        background: transparent;
-        flex: 1;
-        border: 0;
-        outline: none;
-        padding: 12px 20px;
-        font-size: 15px;
-        color: white;
-      }
-      ::placeholder {
-        color: white;
-      }
-      form button {
-        border: 0;
-        outline: none;
-        padding: 5px 20px;
-        color: white;
-        border-radius: 10px;
-        background: #61de2a;
-        cursor: pointer;
-      }
-      .navbar li {
-        list-style: none;
-        display: inline-block;
-        margin: 0 20px;
-        position: relative;
-      }
-      .navbar li a {
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-      }
-      .navbar li:hover {
-        border: 1px;
-        padding: 10px;
-
-        transition: 0.5s;
-        cursor: pointer;
-        border-radius: 30px;
-        background: #61de2a;
-        color: #081b29;
-        box-shadow: 0 0 20px #61de2a;
-      }
-      .container {
-        background: transparent;
-        padding: 10px 5%;
-        padding-bottom: 100px;
-      }
-      .container .box-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-        gap: 100px;
-      }
-      .container .box-container .box {
-        color: white;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 20px;
-        background: transparent;
-        border: 1px solid white;
-        padding: 30px 20px;
-      }
-      .container .box-container .box img {
-        height: 70px;
-        border-radius: 20px;
-      }
-      .container .box-container .box h3 {
-        color: #61de2a;
-        font-size: large;
-        padding: 20px 0;
-      }
-      .container .box-container .box p {
-        color: white;
-        font-size: small;
-        line-height: 1.5;
-      }
-      footer {
-        border: 1px;
-        padding: 10px;
-
-        transition: 0.5s;
-        cursor: pointer;
-        border-radius: 30px;
-        background: #61de2a;
-        color: #081b29;
-        box-shadow: 0 0 20px #61de2a;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="banner">
-      <br />
-      <div class="navbar">
-        <h1 class="logo">IN<span>F</span>O<span> TECH</span></h1>
-        <ul>
-          <li><a href="home.html"> Home </a></li>
-          <li><a href="products.html" class="bg-product"> Products </a></li>
-          <li><a href="people.html"> people </a></li>
-          <li><a href="contact_us.html"> Contact </a></li>
-        </ul>
-        <form action="" method="get">
-          <input type="text" placeholder="Enter to Search" />
-          <button type="submit">Search</button>
-        </form>
-      </div>
-      <div class="container">
-        <div class="box-container">
-          <div class="box">
-            <h3>C++</h3>
-            <p>
-              Efficiency Redefined: Harnessing the Power of C++ for Next-Level Development
-            </p>
-          </div>
-          <div class="box">
-            <h3>C</h3>
-            <p>
-              Crafting Performance: Where Precision Meets C Programming.
-            </p>
-          </div>
-          <div class="box">
-            <h3>SWIFT</h3>
-            <p>
-              Swiftly crafting innovative solutions, one line of code at a time.
-            </p>
-          </div>
-          <div class="box">
-            <h3>PYTHON</h3>
-            <p>
-              Unlocking Innovation: Python Paving the Way to Progress.
-              
-            </p>
-          </div>
-          <div class="box">
-            <h3>PHP</h3>
-            <p>
-              PHP is a server side scripting language that is embedded in HTML.
-            </p>
-          </div>
-          <div class="box">
-            <h3>DELPHI</h3>
-            <p>
-              Mastering the art of Delphi programming: where creativity meets precision. 
-            </p>
-          </div>
-          <div class="box">
-            <h3>PERL</h3>
-            <p>
-              Unraveling the power of Perl: weaving elegance into every script.
-            </p>
-          </div>
-          <div class="box">
-            <h3>RUBY</h3>
-            <p>
-              Ruby: Where Simplicity Meets Power in Programming
-            </p>
-          </div>
-          <div class="box">
-            <h3>JAVA</h3>
-            <p>
-              Stepping into the world of Java: where possibilities are limitless and code is king. 
-            </p>
-          </div>
-          <div class="box">
-            <h3>F#</h3>
-            <p>
-              F# is an Open-source programming language with a lot of features.
-            </p>
-          </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Burger Haven!</h2>
+            <p>The best burgers in town, made with fresh ingredients and a secret sauce!</p>
         </div>
-      </div>
-    </div>
-    <footer>
-      <center>Designed and DEVELOPED BY YUVASHREE S(212223040251)</center>
-    </footer>
-  </body>
-</html>
-```
-people.html
-```
-people
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>people page</title>
-    <style type="text/css">
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .banner {
-        width: 100%;
-        height: 95vh;
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.75),
-            rgba(0, 0, 0, 0.75)
-          ),
-          url(software\ 1.jpg);
-        background-size: cover;
-        background-position: center;
-      }
-      .navbar {
-        width: 85%;
-        margin: auto;
-        padding: 35px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .bg-people {
-        border: 1px;
-        padding: 10px;
-        color: white;
-        background-color: #61de2a;
-        border-radius: 30px;
-      }
-      .logo {
-        color: #61de2a;
-        font-size: 40px;
-        font-weight: 700;
-        letter-spacing: 3px;
-      }
-      span {
-        color: white;
-      }
-      form {
-        width: 300px;
-        height: 40px;
-        display: flex;
-        background: rgba(255, 255, 255, 0.2);
-        padding: 1px 1px;
-        font-size: 15px;
-        border-radius: 10px;
-        backdrop-filter: blur(4px) saturate(180%);
-      }
-      form input {
-        background: transparent;
-        flex: 1;
-        border: 0;
-        outline: none;
-        padding: 12px 20px;
-        font-size: 15px;
-        color: white;
-      }
-      ::placeholder {
-        color: white;
-      }
-      form button {
-        border: 0;
-        outline: none;
-        padding: 5px 20px;
-        color: white;
-        border-radius: 10px;
-        background:#61de2a;
-        cursor: pointer;
-      }
-      .navbar li {
-        list-style: none;
-        display: inline-block;
-        margin: 0 20px;
-        position: relative;
-      }
-      .navbar li a {
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-      }
-      .navbar li:hover {
-        border: 1px;
-        padding: 10px;
+    </section>
 
-        transition: 0.5s;
-        cursor: pointer;
-        border-radius: 30px;
-        background: #61de2a;
-        color: #081b29;
-        box-shadow: 0 0 20px #61de2a;
-      }
-      .image {
-        position: relative;
-        border: 0;
-        top: 150px;
-
-        background: transparent;
-      }
-      .image table {
-        border: 0;
-        color: white;
-        position: relative;
-        left: 200px;
-        border: 10PX;
-        padding-left: 10px;
-      
-      }
-      .image table img {
-        height: 140px;
-        width: 140px;
-        border: 2px solid white;
-        padding: 5px;
-        border-radius: 50%;
-      }
-      .image table td {
-        color:#61de2a;
-      }
-      footer {
-        border: 1px;
-        padding: 10px;
-
-        transition: 0.5s;
-        cursor: pointer;
-        border-radius: 30px;
-        background: #61de2a;
-        color: #081b29;
-        box-shadow: 0 0 20px #61de2a;
-      }
-      .space{
-        padding-left: 30px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="banner">
-      <br />
-      <div class="navbar">
-        <h1 class="logo">IN<span>F</span>O<span> TECH  </span></h1>
-        <ul>
-          <li><a href="home.html"> Home </a></li>
-          <li><a href="products.html"> Products </a></li>
-          <li><a href="people.html" class="bg-people"> people </a></li>
-          <li><a href="contact_us.html"> Contact </a></li>
-        </ul>
-        <form action="" method="get">
-          <input type="text" placeholder="Enter to Search" />
-          <button type="submit">Search</button>
-        </form>
-      </div>
-      <div class="image">
-        <table cellspacing="55" >
-          <tr align="center">
-            <td><img src="pic.jpg" /></td>
-            <td><img src="elon.jpg" /></td>
-            <td><img src="billgates.jpg" /></td>
-            <td><img src="mark.jpg" /></td>
-            <td><img src="dhanush.jpeg" /></td>
-            <td><img src="ambani.jpg" /></td>
-          </tr>
-          <tr align="center" class="space">
-            <th>YUVASHREE</th>
-            <th>ELON MUSK</th>
-            <th>BILL GATES</th>
-            <th>MARK ZUCKERBERG</th>
-            <th>DHANUSH</th>
-            <th>MUKESH AMBANI</th>
-          </tr>
-          <tr align="center">
-            <td>CEO</td>
-            <td>CEO,Co-Founder</td>
-            <td>CTO,Co-Founder</td>
-            <td>DIRECTOR</td>
-            <td>Asst.Director</td>
-            <td>CMO,MM</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <footer>
-      <center>DESIGNED AND DEVELOPED BY YUVASHREE S(212223040251)</center>
-    </footer>
-  </body>
-</html>
-
-```
-contact_us
-```
-PRODUCT
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Page</title>
-    <style type="text/css">
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .banner {
-        width: 100%;
-        height: 95vh;
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.75),
-            rgba(0, 0, 0, 0.75)
-          ),
-          url(software\ 1.jpg);
-        background-size: cover;
-        background-position: center;
-      }
-      .navbar {
-        width: 85%;
-        margin: auto;
-        padding: 35px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .bg-product {
-        border: 1px;
-        padding: 10px;
-        color: white;
-        background-color: #61de2a;
-        border-radius: 30px;
-      }
-      .logo {
-        color: #61de2a;
-        font-size: 40px;
-        font-weight: 700;
-        letter-spacing: 3px;
-      }
-      span {
-        color: white;
-      }
-      form {
-        width: 300px;
-        height: 40px;
-        display: flex;
-        background: rgba(255, 255, 255, 0.2);
-        padding: 1px 1px;
-        font-size: 15px;
-        border-radius: 10px;
-        backdrop-filter: blur(4px) saturate(180%);
-      }
-      form input {
-        background: transparent;
-        flex: 1;
-        border: 0;
-        outline: none;
-        padding: 12px 20px;
-        font-size: 15px;
-        color: white;
-      }
-      ::placeholder {
-        color: white;
-      }
-      form button {
-        border: 0;
-        outline: none;
-        padding: 5px 20px;
-        color: white;
-        border-radius: 10px;
-        background: #61de2a;
-        cursor: pointer;
-      }
-      .navbar li {
-        list-style: none;
-        display: inline-block;
-        margin: 0 20px;
-        position: relative;
-      }
-      .navbar li a {
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-      }
-      .navbar li:hover {
-        border: 1px;
-        padding: 10px;
-
-        transition: 0.5s;
-        cursor: pointer;
-        border-radius: 30px;
-        background: #61de2a;
-        color: #081b29;
-        box-shadow: 0 0 20px #61de2a;
-      }
-      .container {
-        background: transparent;
-        padding: 10px 5%;
-        padding-bottom: 100px;
-      }
-      .container .box-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-        gap: 100px;
-      }
-      .container .box-container .box {
-        color: white;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 20px;
-        background: transparent;
-        border: 1px solid white;
-        padding: 30px 20px;
-      }
-      .container .box-container .box img {
-        height: 70px;
-        border-radius: 20px;
-      }
-      .container .box-container .box h3 {
-        color: #61de2a;
-        font-size: large;
-        padding: 20px 0;
-      }
-      .container .box-container .box p {
-        color: white;
-        font-size: small;
-        line-height: 1.5;
-      }
-      footer {
-        border: 1px;
-        padding: 10px;
-
-        transition: 0.5s;
-        cursor: pointer;
-        border-radius: 30px;
-        background: #61de2a;
-        color: #081b29;
-        box-shadow: 0 0 20px #61de2a;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="banner">
-      <br />
-      <div class="navbar">
-        <h1 class="logo">IN<span>F</span>O<span> TECH</span></h1>
-        <ul>
-          <li><a href="home.html"> Home </a></li>
-          <li><a href="products.html" class="bg-product"> Products </a></li>
-          <li><a href="people.html"> people </a></li>
-          <li><a href="contact_us.html"> Contact </a></li>
-        </ul>
-        <form action="" method="get">
-          <input type="text" placeholder="Enter to Search" />
-          <button type="submit">Search</button>
-        </form>
-      </div>
-      <div class="container">
-        <div class="box-container">
-          <div class="box">
-            <h3>C++</h3>
-            <p>
-              Efficiency Redefined: Harnessing the Power of C++ for Next-Level Development
-            </p>
-          </div>
-          <div class="box">
-            <h3>C</h3>
-            <p>
-              Crafting Performance: Where Precision Meets C Programming.
-            </p>
-          </div>
-          <div class="box">
-            <h3>SWIFT</h3>
-            <p>
-              Swiftly crafting innovative solutions, one line of code at a time.
-            </p>
-          </div>
-          <div class="box">
-            <h3>PYTHON</h3>
-            <p>
-              Unlocking Innovation: Python Paving the Way to Progress.
-              
-            </p>
-          </div>
-          <div class="box">
-            <h3>PHP</h3>
-            <p>
-              PHP is a server side scripting language that is embedded in HTML.
-            </p>
-          </div>
-          <div class="box">
-            <h3>DELPHI</h3>
-            <p>
-              Mastering the art of Delphi programming: where creativity meets precision. 
-            </p>
-          </div>
-          <div class="box">
-            <h3>PERL</h3>
-            <p>
-              Unraveling the power of Perl: weaving elegance into every script.
-            </p>
-          </div>
-          <div class="box">
-            <h3>RUBY</h3>
-            <p>
-              Ruby: Where Simplicity Meets Power in Programming
-            </p>
-          </div>
-          <div class="box">
-            <h3>JAVA</h3>
-            <p>
-              Stepping into the world of Java: where possibilities are limitless and code is king. 
-            </p>
-          </div>
-          <div class="box">
-            <h3>F#</h3>
-            <p>
-              F# is an Open-source programming language with a lot of features.
-            </p>
-          </div>
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="burger1.jpg" alt="Classic Burger">
+                <h3>Classic Burger</h3>
+                <p>A delicious beef patty with lettuce, tomato, and cheese.</p>
+                <p class="price">$8.99</p>
+            </div>
+            <div class="menu-item">
+                <img src="burger2.jpg" alt="Cheese Burger">
+                <h3>Cheese Burger</h3>
+                <p>Beef patty topped with cheddar cheese, pickles, and onions.</p>
+                <p class="price">$9.49</p>
+            </div>
+            <div class="menu-item">
+                <img src="burger3.jpg" alt="Veggie Burger">
+                <h3>Veggie Burger</h3>
+                <p>A healthy veggie patty with avocado, lettuce, and tomato.</p>
+                <p class="price">$7.99</p>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Burger Haven, we take pride in serving high-quality, fresh, and delicious burgers. We source our ingredients locally and make everything with love. Come taste the difference!</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions? Feel free to reach out!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer>
-      <center>Designed and DEVELOPED BY YUVASHREE S(212223040251)</center>
+        <p>&copy; 2024 Burger Haven. All rights reserved.</p>
     </footer>
-  </body>
+</body>
 </html>
 
 ```
+CSS
+```
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #33dd2d;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 60vh;
+    color: rgb(174, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.menu {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e67e22;
+    margin-top: 0.5rem;
+}
+
+
+.about {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #ececec;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact label {
+    font-size: 1.2rem;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 80%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+```
+
+
 ## OUTPUT:
-![alt text](<Screenshot 2024-05-14 103715.png>)
-
-![alt text](<Screenshot 2024-05-14 103725.png>)
-
-![alt text](<Screenshot 2024-05-14 103737.png>)
+![Screenshot 2024-11-12 131425](https://github.com/user-attachments/assets/6d00dd59-bf26-4e96-b5f5-843de7631595)
+![Screenshot 2024-11-12 131433](https://github.com/user-attachments/assets/b7c38f3d-daff-423b-a7db-7591d008ccf0)
+![Screenshot 2024-11-12 131442](https://github.com/user-attachments/assets/40120e33-c1ba-4ff5-a9c2-e6f34c7a601a)
 
 
-![alt text](<Screenshot 2024-05-14 103745.png>)
 
 
 ## RESULT:
